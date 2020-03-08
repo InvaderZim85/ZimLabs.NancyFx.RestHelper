@@ -7,7 +7,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Description>Library for the easy use of the Nancy.Metadata.Modules package.</Description>
     <PackageProjectUrl>https://github.com/InvaderZim85/ZimLabs.NancyFx.RestHelper</PackageProjectUrl>
-    <PackageIcon>Logo_38x38.png</PackageIcon>
+    <PackageIcon>Logo.png</PackageIcon>
     <PackageIconUrl />
     <RepositoryUrl>https://github.com/InvaderZim85/ZimLabs.NancyFx.RestHelper</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\Logo_38x38.png">
+    <None Include="..\Logo.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
