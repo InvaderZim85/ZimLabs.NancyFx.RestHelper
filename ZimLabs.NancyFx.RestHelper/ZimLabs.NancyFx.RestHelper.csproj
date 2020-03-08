@@ -14,6 +14,13 @@
     <PackageTags>Helper, NancyFx, Metadata, Modules</PackageTags>
     <Copyright>Andreas Pouwels</Copyright>
     <Company>Andreas Pouwels</Company>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>E:\Proggen\Utility\ZimLabs.NancyFx.RestHelper\ZimLabs.NancyFx.RestHelper\ZimLabs.NancyFx.RestHelper.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

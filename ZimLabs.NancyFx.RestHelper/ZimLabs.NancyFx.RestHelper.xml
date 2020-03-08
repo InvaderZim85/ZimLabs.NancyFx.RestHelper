@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZimLabs.NancyFx.RestHelper</name>
+    </assembly>
+    <members>
+        <member name="T:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata">
+            <summary>
+            Represents the meta data of a route
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.Name">
+            <summary>
+            Gets the name of the route
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.Path">
+            <summary>
+            Gets the path of the route
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.Method">
+            <summary>
+            Gets the method of the route
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.IsGet">
+            <summary>
+            Gets the value which indicates if the method is GET
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.IsHead">
+            <summary>
+            Gets the value which indicates if the method is HEAD
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.IsPost">
+            <summary>
+            Gets the value which indicates if the method is POST
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.IsPut">
+            <summary>
+            Gets the value which indicates if the method is PUT
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.IsDelete">
+            <summary>
+            Gets the value which indicates if the method is DELETE
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.Description">
+            <summary>
+            Gets the description of the route
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.Segments">
+            <summary>
+            Gets the segments of the route
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.ResponseType">
+            <summary>
+            Gets the response type (JSON, Text, etc.)
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.ResponseSuccess">
+            <summary>
+            Gets the http status code in case of success
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.ResponseFailure">
+            <summary>
+            Gets the http status codes in case of failure
+            </summary>
+        </member>
+        <member name="M:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.#ctor(Nancy.Routing.RouteDescription,System.String,System.String,Nancy.HttpStatusCode[],Nancy.HttpStatusCode[])">
+            <summary>
+            Creates new instance of the <see cref="T:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata"/>
+            </summary>
+            <param name="route">The original route description</param>
+            <param name="description">The route description</param>
+            <param name="responseType">The response type</param>
+            <param name="responseSuccess">The http status code in case of success</param>
+            <param name="responseFailure">The http status code in case of failure</param>
+        </member>
+        <member name="T:ZimLabs.NancyFx.RestHelper.DataObjects.ResponseMessage">
+            <summary>
+            Represents a basic response message
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.ResponseMessage.Code">
+            <summary>
+            Gets or sets the HttpStatusCode
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.ResponseMessage.Message">
+            <summary>
+            Gets or sets the message
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.ResponseMessage.ErrorMessage">
+            <summary>
+            Gets or sets the error message
+            </summary>
+        </member>
+        <member name="M:ZimLabs.NancyFx.RestHelper.DataObjects.ResponseMessage.#ctor(System.String)">
+            <summary>
+            Creates a new instance of the <see cref="T:ZimLabs.NancyFx.RestHelper.DataObjects.ResponseMessage"/> wit the default values (HttpStatusCode = 200, ErrorMessage = "")
+            </summary>
+            <param name="message">The message</param>
+        </member>
+        <member name="M:ZimLabs.NancyFx.RestHelper.DataObjects.ResponseMessage.#ctor(Nancy.HttpStatusCode,System.String)">
+            <summary>
+            Creates a new instance of the <see cref="T:ZimLabs.NancyFx.RestHelper.DataObjects.ResponseMessage"/> with an empty error message
+            </summary>
+            <param name="code">The http status code</param>
+            <param name="message">The message</param>
+        </member>
+        <member name="M:ZimLabs.NancyFx.RestHelper.DataObjects.ResponseMessage.#ctor(Nancy.HttpStatusCode,System.String,System.String)">
+            <summary>
+            Creates a new instance of the <see cref="T:ZimLabs.NancyFx.RestHelper.DataObjects.ResponseMessage"/>
+            </summary>
+            <param name="code">The http status code</param>
+            <param name="message">The message</param>
+            <param name="errorMessage">The error message</param>
+        </member>
+        <member name="T:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute">
+            <summary>
+            Provides the description attribute of a route
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute.Name">
+            <summary>
+            Gets or sets the name of the route
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute.Description">
+            <summary>
+            Gets or sets the description of the route
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute.ResponseType">
+            <summary>
+            Gets or sets the response type (JSON, Text, etc.)
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute.ResponseSuccess">
+            <summary>
+            Gets or sets the http status cod ein case of success
+            </summary>
+        </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute.ResponseFailure">
+            <summary>
+            Gets or sets the http status code in case of failure
+            </summary>
+        </member>
+        <member name="M:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Creates a new instance of the <see cref="T:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute"/>
+            </summary>
+            <param name="name">The name of the route</param>
+            <param name="description">The description of the route</param>
+            <param name="responseType">The response type (JSON, Text, etc.)</param>
+        </member>
+        <member name="M:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute.#ctor(System.String,System.String,System.String,Nancy.HttpStatusCode[])">
+            <summary>
+            Creates a new instance of the <see cref="T:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute"/>
+            </summary>
+            <param name="name">The name of the route</param>
+            <param name="description">The description of the route</param>
+            <param name="responseType">The response type (JSON, Text, etc.)</param>
+            <param name="responseSuccess">The http status code in case of success (optional)</param>
+        </member>
+        <member name="M:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute.#ctor(System.String,System.String,System.String,Nancy.HttpStatusCode[],Nancy.HttpStatusCode[])">
+            <summary>
+            Creates a new instance of the <see cref="T:ZimLabs.NancyFx.RestHelper.DataObjects.RouteDescriptionAttribute"/>
+            </summary>
+            <param name="name">The name of the route</param>
+            <param name="description">The description of the route</param>
+            <param name="responseType">The response type (JSON, Text, etc.)</param>
+            <param name="responseSuccess">The http status code in case of success</param>
+            <param name="responseFailure">The http status code in case of failure</param>
+        </member>
+        <member name="T:ZimLabs.NancyFx.RestHelper.Metadata.MetadataBase`1">
+            <summary>
+            Provides the base class for the metadata
+            </summary>
+            <typeparam name="TModule">The route module</typeparam>
+        </member>
+        <member name="M:ZimLabs.NancyFx.RestHelper.Metadata.MetadataBase`1.#ctor">
+            <summary>
+            Creates a new instance of the <see cref="T:ZimLabs.NancyFx.RestHelper.Metadata.MetadataBase`1"/>
+            </summary>
+        </member>
+        <member name="M:ZimLabs.NancyFx.RestHelper.Metadata.MetadataBase`1.AddDescription">
+            <summary>
+            Adds the description to the nancy context
+            </summary>
+        </member>
+        <member name="M:ZimLabs.NancyFx.RestHelper.Metadata.MetadataBase`1.GetCustomMetadata">
+            <summary>
+            Extracts the metadata of the given class
+            </summary>
+            <returns>The route descriptions</returns>
+        </member>
+    </members>
+</doc>
