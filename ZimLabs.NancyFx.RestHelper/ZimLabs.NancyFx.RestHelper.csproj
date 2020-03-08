@@ -14,10 +14,10 @@
     <PackageTags>Helper, NancyFx, Metadata, Modules</PackageTags>
     <Copyright>Andreas Pouwels</Copyright>
     <Company>Andreas Pouwels</Company>
-    <AssemblyVersion>1.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
-    <Version>1.0.2</Version>
-    <PackageReleaseNotes>Added "/" to empty fields</PackageReleaseNotes>
+    <AssemblyVersion>1.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
+    <Version>1.0.3</Version>
+    <PackageReleaseNotes>Added the property `MainSegment` to the `CustomMetadata`</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

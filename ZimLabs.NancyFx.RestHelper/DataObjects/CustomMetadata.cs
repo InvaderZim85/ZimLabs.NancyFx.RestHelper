@@ -61,6 +61,11 @@ namespace ZimLabs.NancyFx.RestHelper.DataObjects
         public string Segments { get; }
 
         /// <summary>
+        /// Gets the main segment
+        /// </summary>
+        public string MainSegment { get; }
+
+        /// <summary>
         /// Gets the response type (JSON, Text, etc.)
         /// </summary>
         public string ResponseType { get; }
@@ -89,6 +94,7 @@ namespace ZimLabs.NancyFx.RestHelper.DataObjects
             Path = route.Path;
             Method = route.Method;
             Segments = route.Segments != null ? string.Join(", ", route.Segments) : "/";
+            MainSegment = route.Segments != null ? route.Segments.FirstOrDefault() : "";
             Description = description;
             ResponseType = responseType;
 

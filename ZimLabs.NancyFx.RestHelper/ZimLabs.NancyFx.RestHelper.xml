@@ -59,6 +59,11 @@
             Gets the segments of the route
             </summary>
         </member>
+        <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.MainSegment">
+            <summary>
+            Gets the main segment
+            </summary>
+        </member>
         <member name="P:ZimLabs.NancyFx.RestHelper.DataObjects.CustomMetadata.ResponseType">
             <summary>
             Gets the response type (JSON, Text, etc.)
