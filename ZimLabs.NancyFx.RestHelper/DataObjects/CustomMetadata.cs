@@ -88,7 +88,7 @@ namespace ZimLabs.NancyFx.RestHelper.DataObjects
             Name = route.Name;
             Path = route.Path;
             Method = route.Method;
-            Segments = route.Segments != null ? string.Join(", ", route.Segments) : "";
+            Segments = route.Segments != null ? string.Join(", ", route.Segments) : "/";
             Description = description;
             ResponseType = responseType;
 
@@ -110,6 +110,7 @@ namespace ZimLabs.NancyFx.RestHelper.DataObjects
             IsPost = false;
             IsPut = false;
             IsDelete = false;
+
             switch (Method.ToLower())
             {
                 case "get":
